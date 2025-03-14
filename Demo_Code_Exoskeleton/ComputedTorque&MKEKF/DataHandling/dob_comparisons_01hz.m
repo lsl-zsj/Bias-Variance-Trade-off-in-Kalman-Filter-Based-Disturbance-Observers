@@ -29,7 +29,7 @@ function dob_comparisons_01hz()
 
 clear all
 clc
-addpath(genpath('pwd'));
+addpath(genpath(pwd));
 
 % f=0.1 cc=8 vardtimes=1
 dob{1}=load('10hznodob');     % 1 nodob
