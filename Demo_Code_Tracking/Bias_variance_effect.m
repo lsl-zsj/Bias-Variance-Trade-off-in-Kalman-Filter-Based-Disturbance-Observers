@@ -198,7 +198,7 @@ box on
 plot(ETA,bias_seg_square(:,1),'Color','red','LineWidth',1.0)
 plot(ETA,var_seg(:,1),'Color','black','LineWidth',1.0)
 legend('bias$^{2}$','variance','interpreter','latex')
-xlabel('$\log(\eta)$','interpreter','latex')
+xlabel('$\eta$','interpreter','latex')
 ylabel('value','interpreter','latex')
 title('Bais-variance of $\hat{d}_k$ in KF-DOB','interpreter','latex')
 set(gca,'fontsize',16)
@@ -240,23 +240,23 @@ xlim([0,(10)])
 
 
 
-% %
-% figure 
-% hold on
-% box on
-% plot(ETA,bias_seg_square(:,1),'Color','red','LineWidth',1.0,'LineStyle','--')
-% plot(ETA,var_seg(:,1),'Color','black','LineWidth',1.0,'LineStyle','--')
-% plot(ETA,bias_seg_square(:,1)+var_seg(:,1),'Color','black','LineWidth',2.0,'LineStyle','-')
-% scatter(ETA(1:end),bias_seg_squaremkc(1:end,1)+var_segmkc(1:end,1),'SizeData', 40,'Color','red','LineWidth',2.0,'Marker','+')
-% scatter(ETA(1:end),bias_seg_squareimm(1:end,1)+var_segimm(1:end,1),'SizeData', 40,'Color',[0.4660 0.6740 0.1880],'LineWidth',2.0,'Marker','square')
-% lg=legend('KF-DOB bias$^{2}$','KF-DOB variance','KF-DOB bias$^{2}$+variance',...
-%     'MKCKF-DOB bias$^{2}$+variance','IMMKF-DOB bias$^{2}$+variance','interpreter','latex');
-% set(lg,'fontsize',12)
-% set(gca,'fontsize',16)
-% xlabel('$\log(\eta)$','interpreter','latex')
-% ylabel('value','interpreter','latex')
-% ylim([0,5.5])
-% set(gcf,'Position',[100 100 700 600]);
+%
+figure 
+hold on
+box on
+plot(ETA,bias_seg_square(:,1),'Color','red','LineWidth',1.0,'LineStyle','--')
+plot(ETA,var_seg(:,1),'Color','black','LineWidth',1.0,'LineStyle','--')
+plot(ETA,bias_seg_square(:,1)+var_seg(:,1),'Color','black','LineWidth',2.0,'LineStyle','-')
+scatter(ETA(1:end),bias_seg_squaremkc(1:end,1)+var_segmkc(1:end,1),'SizeData', 40,'Color','red','LineWidth',2.0,'Marker','+')
+scatter(ETA(1:end),bias_seg_squareimm(1:end,1)+var_segimm(1:end,1),'SizeData', 40,'Color',[0.4660 0.6740 0.1880],'LineWidth',2.0,'Marker','square')
+lg=legend('KF-DOB bias$^{2}$','KF-DOB variance','KF-DOB bias$^{2}$+variance',...
+    'MKCKF-DOB bias$^{2}$+variance','IMMKF-DOB bias$^{2}$+variance','interpreter','latex');
+set(lg,'fontsize',12)
+set(gca,'fontsize',16)
+xlabel('$\eta$','interpreter','latex')
+ylabel('value','interpreter','latex')
+ylim([0,5.5])
+set(gcf,'Position',[100 100 700 600]);
 
 
 end
