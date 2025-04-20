@@ -162,7 +162,7 @@ set(gca,'fontsize',16)
 xlabel('time (s)','interpreter','latex')
 ylabel('disturbance error','interpreter','latex')
 set(gcf,'Position',[100 100 700 600]);
-lg=legend('$3\sigma$ $\eta=\exp(0)$','${b}_{d,k}$ $\eta=\exp(0)$','$3\sigma$ $\eta=\exp(2)$','${b}_{d,k}$ $\eta=\exp(2)$','interpreter','latex'...
+lg=legend('$3\sigma$ $\eta=0$','${b}_{d,k}$ $\eta=0$','$3\sigma$ $\eta=2$','${b}_{d,k}$ $\eta=2$','interpreter','latex'...
     ,'fontsize',13);
 %set(lg,'fontsize',16)
 title('KF-DOB','interpreter','latex')
@@ -187,7 +187,7 @@ set(gca,'fontsize',16)
 xlabel('time (s)','interpreter','latex')
 ylabel('disturbance error','interpreter','latex')
 set(gcf,'Position',[100 100 700 600]);
-legend('$3\sigma$ $\eta=\exp(0)$','${b}_{d,k}$ $\eta=\exp(0)$','$3\sigma$ $\eta=\exp(20)$','${b}_{d,k}$ $\eta=\exp(20)$','interpreter','latex'...
+legend('$3\sigma$ $\eta=0$','${b}_{d,k}$ $\eta=0$','$3\sigma$ $\eta=20$','${b}_{d,k}$ $\eta=20$','interpreter','latex'...
     ,'fontsize',13)
 title('KF-DOB','interpreter','latex')
 
@@ -210,7 +210,7 @@ plot(t,statefmean2(:,1),'LineWidth',0.6,'color','blue');
 
 xlim([127,131.9]);
 ylim([-10,30]);
-lg=legend('$3\sigma_{d,k}$ $\eta=\exp(0)$','${b}_{d,k}$ $\eta=\exp(0)$','$3\sigma_{d,k}$ $\eta=\exp(2)$','${b}_{d,k}$ $\eta=\exp(2)$','$3\sigma_{d,k}$ $\eta=\exp(20)$','${b}_{d,k}$ $\eta=\exp(20)$','interpreter','latex'...
+lg=legend('$3\sigma_{d,k}$ $\eta=0$','${b}_{d,k}$ $\eta=0$','$3\sigma_{d,k}$ $\eta=2$','${b}_{d,k}$ $\eta=2$','$3\sigma_{d,k}$ $\eta=20$','${b}_{d,k}$ $\eta=20$','interpreter','latex'...
     ,'fontsize',13);
 set(lg,'fontsize',16)
 title('KF-DOB','interpreter','latex')

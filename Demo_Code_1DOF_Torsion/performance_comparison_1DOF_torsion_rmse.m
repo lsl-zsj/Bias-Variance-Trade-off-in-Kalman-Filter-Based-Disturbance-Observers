@@ -137,10 +137,10 @@ hold on
 plot(logeta,kfdobe_rms(:,1),'color','blue','LineWidth',2)
 plot(logeta,mkcdobe_rms(1)*ones(j,1),'color','black','LineWidth',1)
 plot(logeta,immdobe_rms(1)*ones(j,1),'color','red','LineWidth',1)
-xlabel('$\log(\eta)$','interpreter','latex')
+xlabel('$\eta$','interpreter','latex')
 ylabel('RMSE of $d$','interpreter','latex')
 xlim([0,10])
-lg=legend('KF-DOB ($\eta$)','MKCKF-DOB','IMMKF-DOB','interpreter','latex','NumColumns',3);
+lg=legend('KF-DOB','MKCKF-DOB','IMMKF-DOB','interpreter','latex','NumColumns',3);
 set(lg,'fontsize',14)
 set(gca,'fontsize',16)
 set(gcf,'Position',[100 100 700 600]);
