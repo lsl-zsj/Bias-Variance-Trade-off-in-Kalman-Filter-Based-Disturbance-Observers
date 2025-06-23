@@ -187,8 +187,4 @@ ylabel('rad','Interpreter','latex')
 set(gcf,'Position',[100 100 700 600]);
 xlim([7.9,11])
 
-
-
-
-
 end

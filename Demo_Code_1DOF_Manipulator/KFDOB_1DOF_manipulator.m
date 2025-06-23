@@ -148,5 +148,4 @@ plot(t,S(:,3),t,X_R(:,3))
 hold on
 plot(t,S(:,3)-X_R(:,3))
 
-
 end

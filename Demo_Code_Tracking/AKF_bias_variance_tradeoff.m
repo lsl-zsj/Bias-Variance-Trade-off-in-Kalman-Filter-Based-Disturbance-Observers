@@ -219,5 +219,4 @@ set(gcf,'Position',[100 100 700 600]);
 xlabel('time (s)','interpreter','latex')
 ylabel('value','interpreter','latex')
 
-
 end
